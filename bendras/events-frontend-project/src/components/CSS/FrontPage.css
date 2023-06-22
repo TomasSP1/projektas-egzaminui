@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#frontPageContainer {
+  border: none;
+}
+
+#loadingDiv {
+  border: 3px solid black;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+#filtersDiv {
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 80px !important;
+}
+
+#filtersDiv>h1 {
+  font-family: "Titan One", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 7px !important;
+  width: 100%;
+  text-align: start !important;
+}
+
+#eventsDiv {
+  min-height: 85vh;
+}
+
+.cardevents {
+  height: 400px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

@@ -1,0 +1,118 @@
+h5 {
+  font-size: 16px;
+}
+
+#singleEventCard {
+  height: 350px !important;
+  width: 300px !important;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5),
+    inset 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.image-container {
+  position: relative;
+  height: 60%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.image-container:hover::before {
+  opacity: 1;
+}
+
+/* heart button */
+#favContainer {
+  position: absolute;
+  top: 54%;
+  right: 5%;
+  z-index: 100;
+  width: 40px !important;
+  height: 40px !important;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.favContainer:hover {
+  background-color: #ebebeb;
+  transform: scale(1.1);
+}
+
+.favContainer:focus {
+  outline: none;
+}
+
+.favContainer:active {
+  transform: scale(0.9);
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#favHeart {
+  animation: pulsate 1s infinite;
+}
+
+/* --------------------- */
+
+.favNumber {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eventCardBody {
+  font-family: "inter", sans-serif;
+  height: 40%;
+  padding: 5px 20px 0 20px !important;
+}
+
+#eventCardBody>h5 {
+  font-weight: 800;
+}

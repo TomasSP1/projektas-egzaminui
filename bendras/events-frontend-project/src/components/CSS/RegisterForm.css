@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box !important;
+}
+
+#main_containerReg {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #121212;
+  border: 10px solid #03dac6;
+  width: 100vw;
+  height: 100vh;
+  color: white !important;
+}
+
+#leftSideReg {
+  display: none;
+}
+
+#rightSideReg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#rightSideReg h3 {
+  margin-bottom: 10px !important;
+}
+
+#BrandLogoReg {
+  height: 20% !important;
+  object-fit: contain;
+  padding: 1% !important;
+}
+
+#BrandLogoReg>img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#rightSideReg h3 {
+  color: #03dac6 !important;
+  font-family: "Titan One", cursive;
+  text-align: center;
+  margin: 10px 0 !important;
+}
+
+/* .register-btn */
+.register-btn {
+  background-color: #03dac6 !important;
+  font-family: "Titan One", cursive !important;
+  color: black;
+  border: 2px solid transparent !important;
+}
+
+.register-btn:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid #03dac6 !important;
+}
+
+/* login btn */
+.login-instead-btn {
+  background-color: #bb86fc !important;
+  font-family: "Titan One", cursive !important;
+  color: black;
+  border: 2px solid transparent !important;
+}
+
+.login-instead-btn:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid #03dac6 !important;
+}
+
+#rightSideReg label {
+  margin: -10px 0px !important;
+  color: rgb(128, 128, 128);
+}
+
+.inputs-div input,
+.login-instead-btn,
+.register-btn {
+  width: 300px !important;
+}
+
+#regForma {}
+
+#regForma input,
+button,
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500 !important;
+  height: 40px !important;
+}
+
+@media (min-width: 768px) {
+  #leftSideReg {
+    display: block !important;
+    width: 50% !important;
+    height: 100% !important;
+  }
+
+  #rightSideReg {
+    width: 50% !important;
+  }
+}

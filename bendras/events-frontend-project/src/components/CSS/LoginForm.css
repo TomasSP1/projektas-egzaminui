@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box !important;
+}
+
+#main_containerLogin {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #121212;
+  border: 10px solid #03dac6;
+  width: 100vw;
+  height: 100vh;
+  color: white !important;
+}
+
+.login-left {
+  display: none;
+}
+
+.login-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RLform {
+  max-height: 80%;
+  padding: 50px !important;
+}
+
+.RLform input,
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500 !important;
+  height: 40px !important;
+}
+
+#BrandLogoLogin {
+  width: 100%;
+  height: 20% !important;
+  object-fit: contain;
+  padding: 1% !important;
+}
+
+#BrandLogoLogin>img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_containerLogin h3 {
+  color: #03dac6 !important;
+  font-family: "Titan One", cursive;
+  text-align: center;
+  margin: 10px 0 !important;
+}
+
+.Auth-form {
+  width: 420px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+/* login btn */
+#loginBtn {
+  background-color: #03dac6;
+  font-family: "Titan One", cursive !important;
+  color: black;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+}
+
+#loginBtn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid #03dac6;
+}
+
+/* register btn */
+#registerBtn {
+  background-color: #bb86fc;
+  color: black;
+  width: 100%;
+  font-family: "Titan One", cursive !important;
+  border: 2px solid transparent;
+}
+
+#registerBtn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid #bb86fc;
+}
+
+/* Close button */
+#titleCloseBtn>i {
+  background: transparent;
+  border: none;
+  color: #bb86fc;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+#titleCloseBtn>i:hover {
+  color: red;
+}
+
+#titleCloseBtn {
+  width: 10px !important;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .login-left {
+    display: block !important;
+    width: 50% !important;
+    height: 100% !important;
+  }
+
+  .login-right {
+    width: 50% !important;
+  }
+}
